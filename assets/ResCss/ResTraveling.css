@@ -1,0 +1,43 @@
+/* PC */
+@media (min-width: 64em) {
+    
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+   
+ 
+
+
+}
+
+@media (max-width:46.1875em) {
+    .slider__content-title h1{
+        font-size: 3rem;
+    }
+    .slider .slider__content-title h1 {
+        font-size: 15px;
+    }
+    .slider .slider__content-title span {
+        font-size: 9px;
+    }
+    .slider-search-item h1 {
+        font-size: 14px;
+    }
+    .slider-search-item span {
+        font-size: 9px;
+    }
+    .slider-search-item:nth-child(2){
+        padding:0 ;
+        border:none;
+    }
+    .body-festival-list-item img {
+        height:300px;
+    }
+    .body-festival-list-item-content h1 {
+        font-size: 20px;
+    }
+    .body-festival-list-item-content-place h1 {
+        font-size: 20px;
+    }
+}

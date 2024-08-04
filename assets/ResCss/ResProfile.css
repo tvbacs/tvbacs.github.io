@@ -1,0 +1,132 @@
+/* PC */
+@media (min-width: 64em) {
+    .content-right {
+        margin:0 auto;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .main {
+        height:auto;
+    }
+    .main .body .container .navbar{
+        flex-direction:row;
+        height:auto;
+        margin-bottom: 30px;
+    }
+    .main .body .container .navbar-list{
+        flex-direction: row;
+    }
+    .main .body .container .navbar-list-item{
+        margin-bottom: 0;
+    }
+    .main .body .container .content-user-left-avt{
+        height:180px;
+    }
+    .main .body .container .content-user-partner-body{
+        margin-top: 30px;
+    }
+    .main .body .container .content-user-partner-body-item-content{
+        height:400px;
+    }
+    .main .body .container .content-timelines-container {
+        height:300px;
+    }
+    .main .overlay-timelines .modal-timelines{
+        width:85%;
+        
+        border:1px solid black;
+    }
+    .main .body .container .content-inspiration-body-item-left{
+        height:400px;
+    }
+    .main .body .container .content-inspiration-body-item{
+        margin-top: 30px;
+        background-color: antiquewhite;
+        border-radius: 20px;
+    }
+
+}
+
+@media (max-width:46.1875em) {
+    .main {
+        height:auto;
+    }
+    .main .body .container .navbar{
+        flex-direction:row;
+        height:auto;
+        margin-bottom: 30px;
+    }
+    .main .body .container .navbar-list{
+        flex-direction: row;
+    }
+    .main .body .container .navbar-list-item{
+        margin-bottom: 0;
+    }
+    .main .body .container .content-user-left-avt{
+        height:180px;
+    }
+    .main .body .container .content-user-partner-body{
+        margin-top: 30px;
+    }
+    .main .body .container .content-user-partner-body-item-content{
+        height:400px;
+        margin-bottom: 10px;
+    }
+    .main .body .container .content-user-partner-body-item{
+        padding-right:0!important;
+    } 
+    .main .body .container .content-user-left-account{
+        margin:10px 0;
+    }
+    .main .body .container .content-user-partner-top-create{
+        padding-right: 0!important;
+        margin-bottom: 10px;
+    }
+    .main .body .container .content-timelines-container-list-item{
+        width:48%;
+        margin-right: 10px;
+    }
+    .main .body .container .content-timelines-container {
+        height:200px;
+    }
+    .main .overlay-timelines .modal-timelines-body-item-add #PhotoTimeLines{
+        width: 51%;
+        border-radius: 20px;
+    }
+    .main .overlay-timelines .modal-timelines {
+        width: 80%;
+    }
+    .main .body .container .content-inspiration-heading-search {
+        width:90%;
+    }
+    .main .body .container .content-inspiration-body-item-left{
+        height:300px;
+    }
+    .main .body .container .content-inspiration-body-item-left .inspiration-left-info-description {
+        padding:10px;
+        margin:5px 0;
+    }
+    .main .body .container .content-inspiration-body-item-left .inspiration-left-info{
+        margin-top: 20px;
+    }
+    .main .body .container .content-inspiration-body-item-left .inspiration-left-info-date{
+        margin:5px 0;
+    }
+    .main .body .container .content-inspiration-body-item-left .inspiration-left-info-member-list{
+        margin-top: 0;
+    }
+    .main .body .container .content-inspiration-body-item{
+        margin-top: 30px;
+        background-color: antiquewhite;
+        border-radius: 20px;
+    }
+    .main .body .container .content-booking-body-contain-content .booking-ticket{
+        width: 100%;
+        height: 150px;
+    }
+    .main .body .container .content-booking-heading-search{
+        width: 90%;
+    }
+}

@@ -1,0 +1,319 @@
+
+ .slider{
+    position:relative;
+    /* background:url(../imgsAll/imgsVietJ/sliderrr.jpg) top center / contain no-repeat;
+ padding-top: 50%;  */
+ 
+} 
+.slider-content{
+    width:100%;
+    text-align: center;
+    position:absolute;
+    left:0;
+    top:15%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 280px;
+}
+.slider-content-title{
+    display:flex;
+}
+.slider-content-title h1{
+    font-size: 100px;
+    margin:0;
+    color:transparent;
+    -webkit-text-stroke: 1px white;
+    font-weight: bold;
+
+}
+.slider-content-title h2{
+    font-size: 100px;
+    margin:0;
+    color:var(--white-color);
+    font-weight: bold;
+    margin-left: 10px;
+}
+.slider-content img{
+    width: 350px;
+    display: inline-block;
+}
+.slider-content h1 ,.slider-content img{
+    opacity:0;
+    transform:translateY(50px);
+    animation : showContents 1s linear 1 forwards;
+}
+.slider-content h1 {
+    animation-delay:0.5s;
+}
+.slider-content img {
+    animation-delay:1s;
+}
+
+/* BODY */
+.body{
+}
+/* Country */
+.body_country{
+    margin-top: 50px;
+}
+.body_country-left{
+    padding:10px;
+    position:relative;
+}
+.body_country-left-overlay{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display:none;
+}
+.body_country-left-overlay-img{
+    width:100%;
+    height:100%;
+    padding:0 45px;
+    border-radius: 20px;
+    position:relative;
+}
+.body_country-left-overlay-location{
+    position:absolute;
+    width:40px;
+    height:40px;
+    display:none;
+    border:2px solid var(--be-color);
+    border-radius: 50%;
+}
+.location-hl{
+    top:18%;
+    left:45%;
+}
+.location-hn{
+    top:20%;
+    left:35%;
+}
+.location-nb{
+    top:22%;
+    left:39%;
+}
+.location-qb{
+    top:37%;
+    left:43%;
+}
+.location-hue{
+    top:40%;
+    left:46%;
+}
+.location-dn{
+    top:43%;
+    left:54%;
+}
+.location-ha{
+    top:46%;
+    left:54%;
+}
+.location-dl{
+    top:65%;
+    left:56%;
+}
+.location-hcm{
+    top:69%;
+    left:45%;
+}
+.location-vungtau{
+    top:72%;
+    left:49%;
+}
+.location-pq{
+    top:74%;
+    left:28%;
+}
+.body_country-left-overlay-location::after{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--be-color) transparent transparent transparent;
+    position: absolute;
+    left: 8px;
+    bottom: -19.5px;
+}
+.body_country-left-overlay-location img{
+    width:100%;
+    height:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.body_country-left-overlay-img img{
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    -o-object-fit: cover;
+}
+.body_country-left-overlay-list{
+    position: absolute;
+    bottom:20px;
+    right:20px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.body_country-left-overlay-list i{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color:var(--white-color);
+    color:var(--text-color);
+    text-align: center;
+    line-height:30px;
+    font-size: 16px;
+    margin:0 5px;
+    cursor:pointer;
+}
+.body_country-left-overlay-list-btn{
+    width:160px;
+    height:30px;
+    line-height: 30px;
+    font-size: 14px;
+    cursor:pointer;
+    font-weight: 550;
+    border-radius: 20px;
+    background-color:var(--white-color);
+    color:var(--text-color);
+    text-align: center;
+    margin-left: 5px;
+}
+.body_country-left img{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    -o-object-fit: cover;
+}
+.body_country-right{
+    padding:10px; 
+    color:var(--text-color);
+}
+.body_country-right-heading div{
+    font-size: 60px;
+    font-family: 'Piazzolla', serif;
+    font-weight:100;
+}
+.body_country-right-heading div:nth-child(1){
+    text-align: left;
+}
+.body_country-right-heading div:nth-child(2){
+    text-align: right;
+}
+.body_country-right-content{
+    margin:40px 0 50px 0;
+}
+.body_country-right-content p{
+    font-size: 14px;
+    font-weight: 550;
+}
+.body_country-right-btn{
+    width:260px;
+    height:35px;
+    font-size: 16px;
+    font-weight: 550;
+    color:var(--text-color);
+    border-radius: 20px;
+    background-color:var(--be-color);
+    text-align: center;
+    line-height: 35px;
+    cursor:pointer;
+}
+
+.body_country-right-btn:hover{
+    background-color:var(--primary-color);
+    color:var(--white-color);
+}
+.body_country-right-rank{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.body_country-right-rank-left{
+    position: relative;
+    display:flex;
+    align-items: center;
+    width:60px;
+    height:150px;
+    border-radius: 30px;
+    background-color: var(--be-color);
+}
+.body_country-right-rank-left div{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    right: -50%;
+    width:60px;
+    height:60px;
+    text-align: center;
+    line-height:60px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: var(--brown-color);
+    color:var(--white-color);
+}
+.body_country-right-rank-right{
+   padding-left:60px;
+   font-size: 16px;
+   font-weight: 500;
+   flex:1;
+}
+
+.body__beacountry-slider{
+    background-image: url(../imgsAll/imgsVietJ/Screenshot.png);
+    width:100%;
+    height: 350px;
+    margin-top: 50px;
+    position: relative;
+}
+.body__beacountry-slider h1{
+    color:var(--white-color);
+    font-size: 25px;
+    width: 450px;
+    text-align: center;
+    position: absolute;
+    top:40%;
+    right: 35%;
+}
+
+/* Body list place  */
+.body__list-place{
+    padding:30px 0px;
+    background-color: var(--background-color);
+}
+
+.img-shap-two{
+    top:5%;
+}
+.img-arrow-two{
+    top: 85%;
+}
+@keyframes blur {
+    0% {
+        backdrop-filter: blur(0);
+    }100%{
+        backdrop-filter: blur(10px);
+        background-color: rgba(0,0,0,0.1);
+    } 
+    
+}
+@keyframes bold {
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+

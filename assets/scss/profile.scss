@@ -1,0 +1,1355 @@
+@import './valiable';
+@import './function';
+@import './mixin';
+
+.main {
+    @include img();
+    background-image: url("../imgsAll/imgProfile/background.png");
+    height:100vh;
+    @include flex();
+    .body{    
+        height:90%;
+        border-radius: 40px;
+        background-color: rgba(255,255,255,0.35);
+        backdrop-filter: blur(100px);
+        border : 1px solid $white-color;
+        margin:auto;
+        padding:20px;
+        .container{
+            width:100%;
+            height:100%;
+            .navbar{
+                height:100%;
+                border-radius: 35px;
+                background-color: rgba(255,255,255,0.4);
+                backdrop-filter: blur(500px);
+                padding:10px;
+                @include flex();
+                flex-direction: column;
+                justify-content: space-between;
+                &-list{
+                    @include flex();
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding:20px 0;
+                    &-item{
+                        width:100%;
+                        height:35px;
+                        border-radius: 20px;
+                        margin-bottom: 25px;
+                        @include flex();
+                        justify-content:center;
+                        cursor:pointer;
+                        img{
+                            @include img();
+                            width:60%;
+                        }
+                        &.active{
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+            .content-user{
+                height:100%;
+                border-radius: 20px;  
+                &-left{
+                @include flex();
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 20px 0px 0 20px;
+                height:100%;
+                    &-avt{
+                        width:100%;
+                        height:30%;
+                        @include bgP();
+                        border-radius: 30px;
+                        @include flex();
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        position:relative;
+                        &-add{
+                            width:100px;
+                            height:100px;
+                            padding:5px;
+                            border-radius: 50%;
+                            background-color: white;
+                            position:absolute;
+                            top:-20px;
+                            #profileImage{
+                                @include img();
+                                border-radius: 50%;
+                                height:90px;                              
+                            }
+                            &-input{
+                                width:40px;
+                                height:40px;
+                                border-radius: 50%;
+                                position:absolute;
+                                @include flex();
+                                justify-content:center;
+                                bottom:0;
+                                right:0px;
+                                background-color: rgba(255,255,255,0.8);
+                                backdrop-filter: blur(20px);
+                                cursor:pointer;
+                                input{
+                                    width:100%;
+                                    height:100%;
+                                    opacity:0;
+                                    position: absolute;
+                                 cursor:pointer;
+                                }
+                                img{
+                                    @include img();
+                                    width:60%;
+                                }
+                            }
+                        }
+                        &-name{
+                           
+                            color:$text-color;
+                            position:absolute;
+                            bottom:25px;
+                            h2{
+                                font-size: 20px;
+                               
+                            }
+                            span{
+                                font-size: 14px;
+                               
+                            }
+                        }
+                    }
+                    &-account{
+                        width:100%;
+                        height:48%;
+                        @include bgP();
+                        border-radius: 30px;
+                        @include flex();
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        text-align: center;
+                        position:relative;
+                        color:$text-color;
+                        padding:10px 15px;
+                       
+                        &-item{
+                            width:100%;
+                            @include flex();
+                            justify-content: space-between;
+                            h2{
+                                font-size: 16px;
+                            }
+                            &-img{
+                                @include img();
+                                width: 25px;
+                                height: 25px;
+                                display:block;
+                                cursor:pointer;
+                            }
+                            span{
+                                font-size: 14px;
+                                font-weight: 100;
+                            }
+                            .info-accout{
+                                font-weight: 550;
+                            }
+                        }
+                    }
+                    &-status{
+                        width:100%;
+                        height:15%;
+                        @include bgP();
+                        border-radius: 30px;
+                        @include flex();
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        text-align: center;
+                        position:relative;
+                        color:$text-color;
+                        padding:10px 15px;
+                        
+                        &-item{
+                            width:100%;
+                            @include flex();
+                            justify-content: space-between;
+                            span{
+                                font-size: 14px;
+                                font-weight: 100;
+                            }
+                            .info-status{
+                                font-weight: 550;
+                            }
+                        }
+                    }
+                }
+                &-partner{
+                    padding: 20px 0px 0 20px;
+                    height:100%;
+                    &-top{
+                        width:100%;
+                        height:20%;
+                        &-create{
+                            border-radius: 30px;
+                            height:100%; 
+                            padding-right: 20px;
+                            &-content{
+                                background-color: rgba(255,255,255,0.35);
+                                backdrop-filter: blur(80px);
+                                border-radius: 20px;
+                                width:100%;
+                                height:100%;
+                                padding:15px;
+                                color:$text-color;
+                                @include flex();
+                                flex-direction: column;
+                                text-align: center;
+                            
+                                justify-content:space-between;
+                                span{
+                                    font-size: 13px;
+                                    text-align: center;
+                                    font-weight: 100;
+                                }
+                                &-btn{
+                                    cursor:pointer;
+                                    width:80%;
+                                    height:30px;
+                                    border-radius: 20px;
+                                    background-color: rgba(255,255,255,1);
+                                    font-size: 14px;
+                                    line-height: 30px;
+                                    font-weight: 550;
+                                }
+                            }
+                        }
+                        &-rewards{
+                            border-radius: 20px;
+                            height:100%;
+                            background-color: rgba(255,255,255,0.35);
+                            backdrop-filter: blur(80px);
+                            color:$text-color;
+                            padding:15px;
+                            &-content{
+                                width:100%;
+                                height:100%;
+                                span{
+                                    font-size: 14px;
+                                    font-weight: 550;
+                                }
+                                &-list{
+                                    @include flex();
+                                    width: 100%;
+                                    justify-content:space-between;
+                                    margin-top: 10px;
+                                    &-img{
+                                       @include img();
+                                       width:36%;
+                                       display: inline-block; 
+                                    }
+                                    &-hr{
+                                        width:0px;
+                                        height:30px;
+                                        border:1px solid $primary-color;
+                                    }
+                                    .info-rewards{
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-body{
+                        width:100%;
+                        height:77%;
+                        &-item{
+                            border-radius: 30px;
+                            height:100%;
+                            &-content{
+                            padding:15px;
+                            width:100%;
+                            height:100%;
+                            border-radius: 20px;
+                            background-color: rgba(255,255,255,0.20);
+                            backdrop-filter: blur(80px);
+                            color:$text-color;
+                            &-heading{
+                                width:100%;
+                                @include flex();
+                                justify-content: space-between;
+                                margin-bottom: 20px;
+                                span{
+                                    font-size: 14px;
+                                    font-weight: 550;
+                                }
+                                .info-number-patner{
+                                    padding:5px 20px;
+                                    border-radius: 20px;
+                                    background-color: $white-color;
+                                    text-align: center;
+                                    font-weight: 550;
+                                }
+                            }
+                            &-list{
+                                width: 100%;
+                                height:85%;
+                                display: flex();
+                                flex-direction: column;
+                                flex:0 0 auto;
+                                overflow-y: scroll;
+                               .partner-item{
+                                width:100%;
+                                
+                                background-color: rgba(255,255,255,0.4);
+                                backdrop-filter: blur(80px);
+                                @include flex();
+                                border-radius: 20px;
+                                padding:10px;
+                                color:$text-color;
+                                margin-bottom: 20px;
+                                    &-avt{
+                                        @include img();
+                                        width:55px;
+                                        height: 55px;
+                                        margin-right: 10px;
+                                        border-radius: 50%;
+                                    }
+                                &-if{
+                                    @include flex();
+                                    flex-direction: column;
+                                    align-items: normal;
+                                    &-name{
+                                        font-size: 14px;
+                                    }
+                                    &-list{
+                                        @include flex();
+                                        &-btn{
+                                            padding:3px;
+                                            font-weight: 550;
+                                            border-radius: 20px;
+                                            font-size: 12px;
+                                            text-align: center;
+                                            background-color: $white-color;
+                                            cursor:pointer;
+                                            margin-right: 10px;
+                                            img{
+                                                @include img();
+                                                width:80%;
+                                            }
+                                        }
+                                    }
+                                }
+                               } 
+                               &::-webkit-scrollbar{
+                                display:none;
+                               }
+                                .notify-item{
+                                    width:100%;
+                                    
+                                    background-color: rgba(255,255,255,0.4);
+                                    backdrop-filter: blur(80px);
+                                    @include flex();
+                                    justify-content: space-between;
+                                    border-radius: 20px;
+                                    padding:10px;
+                                    color:$text-color;
+                                    margin-bottom: 20px;
+                                    &-if{
+                                        h1{
+                                            font-size: 16px;
+                                        }
+                                        span{
+                                            font-size: 15px;
+                                            display: -webkit-box;
+                                            -webkit-box-orient: vertical;
+                                            -webkit-line-clamp: 2;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                        }
+                                    }
+                                    &-btn{
+                                        display: none;
+                                        i{
+                                            font-size: 14px;
+                                            color:$text-color;
+                                            padding:10px;
+                                            border-radius: 50%;
+                                            background-color: white;
+                                            cursor:pointer;
+                                        }
+                                    }
+                                    &:hover .notify-item-btn{
+                                        display: block;
+                                    }
+                                }
+                            }
+                            }
+                        }
+                    }
+                }
+               
+            }
+            .content-timelines{         
+                height:100%;
+                display: none;
+                padding-left:30px;
+                &-heading{
+                    width:100%;
+                    &-btn{
+                        float:right;
+                        padding:5px 10px;
+                        font-size: 14px;
+                        cursor:pointer;
+                        background-color: $white-color;
+                        color:$text-color;
+                        i{
+                            margin-right: 5px;
+                        }
+                        border-radius: 20px;
+                    }
+                    &-arrow{
+                        width:100%;
+                        @include flex();
+                        justify-content:space-between;
+                        color:$text-color;
+                        h1{
+                            font-size: 18px; 
+                        }
+                        &-list{
+                            @include flex();
+                            margin: 20px 0;
+                            &-item{
+                                width:30px;
+                                height:30px;
+                                font-size: 12px;
+                                text-align: center;
+                                line-height: 30px;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                                background-color: rgba(255,255,255,0.4);
+                               
+                                cursor:pointer;
+                                &.active{
+                                    background-color:white;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-container{
+                    @include flex();
+                    flex-direction: column;
+                    height:80%;
+                    overflow-y:auto ;
+                    &-list{
+                        width:100%;
+                        height:100%;
+                        @include flex();
+                        overflow:hidden;
+                        scroll-behavior: smooth;
+                        flex:0 0 auto;
+                        margin-bottom: 20px;
+                        &-item{
+                            position:relative;
+                            width:30%;
+                            height:100%;
+                            flex: 0 0 auto;
+                            cursor:pointer;
+                            margin-right: 30px;
+                            transition : all 0.25s linear;
+                            border-radius: 20px;
+                            img{
+                                @include img();
+                                border-radius: 20px;
+                            }
+                            &-date{
+                                position:absolute;
+                                display:none;
+                                width:100%;
+                                height:40px;
+                                padding:10px;
+                                bottom:20px;
+                                font-size: 14px;
+                                font-weight: bold;
+                                color:$text-color;
+                                background-color: rgba(255,255,255,0.7);
+                                backdrop-filter: blur(80px);
+                                border-bottom-left-radius: 20px;
+                                border-bottom-right-radius: 20px;
+                            }
+                            &-overlay{
+                                position: absolute;
+                                top:0;
+                                right:0;
+                                left:0;
+                                bottom:0;
+                                background-color: rgba(255,255,255,0.7);
+                                backdrop-filter: blur(50px);
+                                border-radius: 20px;
+                                padding:30px;
+                                @include flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                display: none;
+                                &-if{
+                                    color:$text-color;
+                                    h1{
+                                        font-size: 16px;
+                                        margin-bottom: 0;
+                                    }
+                                    .location{
+                                        font-size: 14px;
+                                        @include flex();
+                                        align-items: center;
+                                        h3{
+                                            margin-left:5px;
+                                            margin-bottom: 0;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                        }
+                                    }
+                                    span{
+                                        font-size: 16px;
+                                        margin-top: 10px;
+                                        
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 9;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                    }
+                                }
+                                &-list{
+                                    display:flex;
+                                    justify-content: flex-end;
+                                    width: 100%;
+                                    &-delete{
+                                        cursor:pointer;
+                                        width:30px;
+                                        height:30px;
+                                        border-radius: 50%;
+                                        background-color: white;
+                                        @include flex();
+                                        img{
+                                            @include img();
+                                            width:80%;
+                                            margin:auto ;
+                                        }
+                                    }
+                                    &-close{
+                                        width:100px;
+                                        height:30px;
+                                        text-align: center;
+                                        line-height: 30px;
+                                        background-color: white;
+                                        color:$text-color;
+                                        margin-left: 10px;
+                                        cursor:pointer;
+                                        font-size: 16px;
+                                        border-radius: 20px;
+                                        
+                                    }
+                                }
+                            }
+                            &:hover .content-timelines-container-list-item-date{
+                                display:block;
+                            }
+                            &:hover{
+                                transform : translateY(-1px);
+                            }
+                        }
+                    }
+                    &::-webkit-scrollbar{
+                        display:none;
+                    }
+                }
+            }
+            .content-inspiration{
+                padding :0 0px 0 20px;
+                display:none;
+                &-heading{
+                    width: 100%;
+                    @include flex();
+                    flex-direction: column;
+                    align-items: flex-start;
+                    h1{
+                        font-size: 18px;
+                        color:$text-color;
+                        text-align: left;
+                    }
+                    &-search{
+                        width: 40%;
+                        height: 35px;
+                        border-radius: 20px;
+                        padding:0 10px;                       
+                        @include bgP();
+                        @include flexPara(left,space-between,center,row);
+                        margin :auto;
+                        input{
+                            @include input();
+                            font-size: 14px;
+                            width: 100%;
+                        }
+                        img{
+                            @include img();
+                            width:25px;
+                        }
+                    }
+                }
+                &-body{
+                    height:85%;
+                    margin-top: 15px;
+                    &-item{
+                        padding-right: 10px;
+                        height:100%;
+                        &-left{
+                            border-radius: 20px;
+                            background-color: rgba(255,255,255,0.5);
+                            backdrop-filter: blur(80px);
+                            padding:10px;
+                              height:100%;
+                            .inspiration-left-contain{
+                                position:relative;
+                                height:100%;
+                                &-list{
+                                    @include flex();
+                                    overflow-x: hidden;
+                                    scroll-behavior: smooth;
+                                  height:100%;
+                                  width:100%;
+                                  &-img{
+                                      @include img();
+                                      height:100%;
+                                      border-radius: 20px;
+                                      flex : 0 0 auto;
+                                  }
+                                }
+                             
+                                &-arrow{
+                                    position:absolute;
+                                    bottom:10px;
+                                    right:10px;
+                                    @include flex();
+                                    padding:5px 10px;
+                                    border-radius: 20px;
+                                    @include bgP();
+
+                                    i{
+                                        font-size: 12px;
+                                        color:$text-color;
+                                        cursor:pointer;
+                                    }
+                                    i:nth-child(2){
+                                        margin:0 10px;
+                                        font-size: 8px;
+                                        cursor:default;
+                                    }
+                                }
+                            }
+                            .inspiration-left-info{
+                                height:100%;
+                                padding-left: 20px;
+                                &-user{
+                                    img{
+                                        @include img();
+                                        width:35px;
+                                        border-radius: 50%;
+                                        margin-right: 10px;
+                                    } 
+                                    span{
+                                        font-size: 12px;
+                                        color:$text-color;
+                                    }
+                                }
+                                &-description{
+                                    width:100%;
+                                    height:40%;
+                                    overflow: hidden;
+                                    padding:20px;
+                                    color:$text-color;
+                                    font-size: 12px;
+                                    background-color: white;
+                                    border-radius: 20px;
+                                    margin:15px 0;
+                                }
+                                &-place{
+                                    width:100%;
+                                    height:35px;
+                                    border-radius: 20px;
+                                    background-color: white;
+                                    @include flex();
+                                    justify-content: space-between;
+                                    padding:0 20px;
+                                    color:$text-color;
+                                    font-size: 12px;
+                                    i{
+                                        font-size: 12px;
+                                    }
+                                }
+                                &-date{
+                                    width:100%;
+                                    height:35px;
+                                    border-radius: 20px;
+                                    background-color: white;
+                                    @include flex();
+                                    justify-content: space-between;
+                                    padding:0 20px;
+                                    color:$text-color;
+                                    font-size: 12px;
+                                    margin:15px 0;
+                                    i{
+                                        font-size: 12px;
+                                    }
+                                }
+                                &-member{
+                                    color:$text-color;
+                                    h1{font-size: 14px;}
+                                    &-list{
+                                        margin-top: 10px;
+                                        width: 100%;
+                                        @include flex();
+                                        &-item{
+                                            padding:5px 10px;
+                                            border-radius: 20px;
+                                            background-color: white;
+                                            margin-right: 10px;
+                                            font-size: 12px;
+                                            i{
+                                                margin-left: 8px;
+                                            }
+                                        }
+                                    }
+                                    &-btn{
+                                        padding:5px 15px;
+                                        border-radius: 20px;
+                                        background-color: white;
+                                        margin-right: 10px;
+                                        font-size: 12px;
+                                        border: 1px solid $text-color;
+                                        color:red;
+                                        cursor:pointer;
+                                        float:right;
+                                    }
+                                }
+                            }
+                        }
+                        &-menu{
+                            height:100%;
+                            color:$text-color;
+                            padding-left: 10px;
+                            h1{
+                                font-size: 14px;
+                            }
+                            &-share{
+                                width:100%;
+                                height:25%;
+                                @include flex();
+                                flex-direction: column;
+                                @include bgP();
+                                border-radius: 20px;
+                                justify-content:center;
+                                align-items:center;
+                                text-align: center;
+                                cursor:pointer;
+                                i{
+                                    font-size: 14px;
+                                    padding:10px;
+                                    border-radius: 50%;
+                                    background-color: #B0A695;
+                                    color:white;
+                                }
+                                span{
+                                    font-size: 14px;
+                                }
+                            }
+                            &-post{
+                                color:$text-color;
+                                border-radius: 20px;
+                                padding:20px 10px;
+                                background-color: rgba(250, 249, 246, 0.5);
+                                backdrop-filter: blur(80px);
+                                @include flex();
+                                flex-direction: column;
+                                margin:10px 0;
+                                // height:65%;
+                                &-heading{
+                                    margin: 10px 0 20px 0;
+                                    @include flex();
+                                    justify-content: center;
+                                    align-items: center;
+                                    span{
+                                        font-size: 14px;
+                                        font-weight: 550;
+                                    }
+                                    img{
+                                        @include img();
+                                        width:20px;
+                                        margin-left: 3px;
+                                    }
+                                }
+                                &-button{
+                                    width:100%;
+                                    height:35px;
+                                    border-radius: 20px;
+                                    text-align: center;
+                                    line-height: 35px;
+                                    font-size: 14px;
+                                    font-weight: 550;
+                                    margin-bottom: 20px;
+                                    cursor:pointer;
+                                    &.active{
+                                        background-color:white;
+                                    }
+                                }
+
+                            }
+                            &-create{
+                                width:100%;
+                                height:15%;
+                                background-color: white;
+                                @include flex();
+                                font-size: 13px;
+                                color:$text-color;
+                                border-radius: 20px;
+                                padding:10px;
+                                cursor:pointer;
+                                font-weight: 550;
+                                display:none;
+                                justify-content:space-between;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+            .content-booking{
+                padding :0 0px 0 20px; 
+                display: none;
+                &-heading{
+                    width: 100%;
+                    @include flex();
+                    flex-direction: column;
+                    align-items: flex-start;
+                    h1{
+                        font-size: 18px;
+                        color:$text-color;
+                        text-align: left;
+                    }
+                    &-search{
+                        width: 40%;
+                        height: 35px;
+                        border-radius: 20px;
+                        padding:0 10px;                       
+                        @include bgP();
+                        @include flexPara(left,space-between,center,row);
+                        margin :auto;
+                        input{
+                            @include input();
+                            font-size: 14px;
+                            width: 100%;
+                        }
+                        img{
+                            @include img();
+                            width:25px;
+                        }
+                    }
+                }
+                &-body{
+                    width: 100%;
+                    height: 85%;
+                    margin-top: 15px;
+                    &-list{
+                        @include flex();
+                        &-btn{
+                            font-size: 16px;
+                            color:$text-color;
+                            cursor:pointer;
+                            margin-right: 20px;
+                            padding:5px 0;
+                            &.active{
+                                font-weight: bold;
+                                border-bottom: 2px solid $text-color;
+                            }
+                        }
+                    }
+                    &-contain{
+                        width: 100%;
+                        height: 90%;
+                        margin-top: 10px;
+                        @include flex();
+                        &-content{
+                            width: 100%;
+                            height: 400px;
+                            flex:0 0 auto;
+                            @include  flex();
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            scroll-behavior: smooth;
+                            overflow-y: scroll;
+                            .booking-ticket{
+                                @include flex();
+                                align-items: normal;
+                                width: 48%;
+                                height: 180px;
+                                background-color: rgba(250, 249, 246, 0.5);
+                                backdrop-filter: blur(80px);
+                                border-radius: 20px;
+                                padding:10px;
+                                margin-bottom: 20px;
+                                img{
+                                    @include img();
+                                    width: 35%;
+                                    height: 100%;
+                                }
+                                &-if{
+                                    padding:10px;
+
+                                    h1{
+                                        font-size: 16px;
+                                        color:$text-color;
+                                    }
+                                }
+                            }
+                            &::-webkit-scrollbar{
+                                display: none;
+                            }              
+                        }
+                    }
+                }
+            }
+            .content-setting{
+                display: none;
+                padding :0 0px 0 20px;
+                h1{
+                    font-size: 16px;
+                    color:$text-color;
+                    margin-bottom: 10px;
+                } 
+                &-btn{
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 20px;
+                    background-color: white;
+                    color:$text-color;
+                    @include flex();
+                    justify-content: space-between;
+                    padding:20px;
+                    margin-bottom: 10px;
+                    &-description{
+                        h1{
+                            font-size: 14px;
+                        }
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+                    .content-btn{
+                        height: 20px;
+                        width: 45px;
+                        background-color: #776B5D;
+                        i{
+                            font-size: 16px;
+                        }
+                       
+                    }
+                    button{
+                        @include button();
+                       
+                        img{
+                            @include img();
+                            width: 25px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    .overlay-timelines{
+        position:absolute;
+        top:0;
+        right:0;
+        left:0;
+        bottom:0;
+        background-color: rgba(0,0,0,0.01);
+        backdrop-filter: blur(10px);
+        @include flex();
+        display:none;
+        .modal-timelines{
+            width:60%;
+            height:80%;
+            background-color: rgba(255,255,255,1);
+            backdrop-filter: blur(80px);
+            border-radius: 30px;
+            margin:auto;
+            padding:20px;
+            &-heading{
+                width:100%;
+                @include flex();
+                justify-content:space-between;
+                i{
+                    color:$text-color;
+                    font-size: 16px;
+                    cursor:pointer;
+                }
+                h1{
+                    color:$text-color;
+                    font-size: 16px;
+                }
+                button{
+                    font-size: 15px;
+                    color:red;
+                    border:none;
+                    outline:none;
+                    background-color: transparent;
+                }
+            }
+            &-body{
+                width:100%;
+                height:93%;
+                margin-top:10px;
+                &-item{
+                    padding:10px;
+                    &-add{
+                        width:100%;
+                        height:100%;
+                        border-radius: 20px;
+                        border:1px solid black;
+                        @include flex();
+                        position:relative;
+                        input{
+                            width:100%;
+                            height:100%;
+                            opacity:0;
+                            position:absolute;
+                            z-index: 2;
+                            cursor:pointer;
+                        }
+                        &-content{
+                            margin:auto;
+                            @include flex();
+                            flex-direction: column;
+                            align-items:center;
+                            justify-content: center;
+                            img{
+                                @include img();
+                                width:30px;
+                            }
+                            p{
+                                font-size: 16px;
+                                color:$text-color;
+                            }
+                            z-index: 1;
+                            cursor:ponter;
+                        }
+                        #PhotoTimeLines{
+                            position:absolute;
+                            @include img();
+                           
+                            z-index: 0;
+                        }
+                    }
+                    &-content{
+                        width: 100%;
+                        height:100%;
+                        &-user{
+                            @include flex();
+
+                            img{
+                                @include img();
+                                width:30px;
+                            }
+                            span{
+                                font-size: 12px;
+                                color:$text-color;
+                                margin-left: 10px;
+                            }
+                        }
+                        &-write{
+                            width:100%;
+                            height:50%;
+                            font-size: 14px;
+                            color:$text-color;
+                            border-radius: 20px;
+                            border:none;
+                            outline:none;
+                            @include bgP();
+                            margin:10px 0;
+                            padding:10px;
+                        }
+                        &-select{
+                            width:100%;
+                            height:35px;
+                            border-radius: 20px;
+                            input{
+                                // -webkit-appearance: none;
+                                // -moz-appearance: none;
+                                // appearance: none;
+                                @include input();
+                                outline:none;
+                                border:none;  
+                                background-color: transparent;
+                                color:$text-color;
+                            }                          
+                            @include bgP();
+                            padding:0 10px;
+                           
+                            font-size: 14px;
+                            @include flex();
+                            justify-content:space-between;
+                        }
+                        &-location{
+                            width:100%;
+                            height:35px;
+                            border-radius: 20px;
+                            @include bgP();
+                            font-size: 14px;
+                            color:$text-color;
+                            @include flex();
+                            justify-content:space-between;
+                            padding:0 10px;
+                            input{
+                                border:none;
+                                outline:none;
+                                background-color: transparent;
+                            }
+                            margin:10px 0;
+                            i{
+                               
+                            }
+                        }
+                         &-date{
+                            width:100%;
+                            height:35px;
+                            border-radius: 20px;
+                            @include bgP();
+                            font-size: 14px;
+                            color:$text-color;
+                            @include flex();
+                            justify-content:space-between;
+                            padding:0 10px;
+                            input{
+                                width:100%;
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                                appearance: none;
+                                border:none;
+                                outline:none;
+                                background-color: transparent;
+                                color:$text-color;
+                            }
+                            margin:10px 0;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .overlay-inspiration{
+        position:absolute;
+        top:0;
+        right:0;
+        left:0;
+        bottom:0;
+        background-color: rgba(0,0,0,0.01);
+        backdrop-filter: blur(10px);
+        @include flex();
+        display: none;
+        .modal-inspiration{
+            width:60%;
+            height:80%;
+            background-color: rgba(255,255,255,1);
+            backdrop-filter: blur(80px);
+            border-radius: 30px;
+            margin:auto;
+            padding:20px;
+            &-heading{
+                width:100%;
+                @include flex();
+                justify-content:space-between;
+                i{
+                    color:$text-color;
+                    font-size: 16px;
+                    cursor:pointer;
+                }
+                h1{
+                    color:$text-color;
+                    font-size: 16px;
+                }
+                button{
+                    font-size: 15px;
+                    color:red;
+                    border:none;
+                    outline:none;
+                    background-color: transparent;
+                }
+            }
+            &-body{
+                width:100%;
+                height:93%;
+                margin-top:10px;
+                &-left{
+                    height:100%;
+                    overflow-y: scroll;
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+                    @include flex();
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    justify-content: baseline;
+                    &-add{
+                        width:130px;
+                        height:130px;
+                        margin-left:  10px;
+                        border-radius: 30px;
+                        border: 1px solid $text-color;
+                        @include flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        position:relative;
+                        img{
+                            @include img();
+                            width: 25px;
+                        }
+                        span{
+                            color:$text-color;
+                            font-size: 16px;
+                        }
+                        input{
+                            @include input();
+                            width: 100%;
+                            height: 100%;
+                            z-index:1;
+                            opacity:0;
+                            position:absolute;
+                        }
+                    }
+                    &-item{
+                        width:130px;
+                        height:130px;
+                        border-radius: 30px;
+                        overflow: hidden;
+                        
+                        margin-left:  10px;
+                        margin-bottom: 10px;
+                        img{
+                            @include img();
+                            width: 100%;
+                            height: 100%;
+                            border:none;
+                            opacity:0;
+                        }
+                    }
+
+                }
+                &-item{
+                    padding:10px;
+                    &-content{
+                        width: 100%;
+                        height:100%;
+                        &-user{
+                            @include flex();
+    
+                            img{
+                                @include img();
+                                width:30px;
+                            }
+                            span{
+                                font-size: 12px;
+                                color:$text-color;
+                                margin-left: 10px;
+                            }
+                        }
+                        &-write{
+                            width:100%;
+                            height:50%;
+                            font-size: 14px;
+                            color:$text-color;
+                            border-radius: 20px;
+                            border:none;
+                            outline:none;
+                            @include bgP();
+                            margin:10px 0;
+                            padding:10px;
+                        }
+                        &-select{
+                            width:100%;
+                            height:35px;
+                            border-radius: 20px;
+                            select{
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                                appearance: none;
+                                @include input();
+                                outline:none;
+                                border:none;  
+                                padding:0 10px;
+                                background-color: transparent;
+                                color:$text-color;
+                            }                
+                            @include bgP();
+                            padding-right:10px;
+                           
+                            font-size: 14px;
+                            @include flex();
+                            justify-content:space-between;
+                        }
+                        &-location{
+                            width:100%;
+                            height:35px;
+                            border-radius: 20px;
+                            @include bgP();
+                            font-size: 14px;
+                            color:$text-color;
+                            @include flex();
+                            justify-content:space-between;
+                            padding:0 10px;
+                            input{
+                                border:none;
+                                outline:none;
+                                background-color: transparent;
+                            }
+                            margin:10px 0;
+                            i{
+                               
+                            }
+                        }
+                         &-date{
+                            width:100%;
+                            height:35px;
+                            border-radius: 20px;
+                            @include bgP();
+                            font-size: 14px;
+                            color:$text-color;
+                            @include flex();
+                            justify-content:space-between;
+                            padding:0 10px;
+                            input{
+                                width:100%;
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                                appearance: none;
+                                border:none;
+                                outline:none;
+                                background-color: transparent;
+                                color:$text-color;
+                            }
+                            margin:10px 0;
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

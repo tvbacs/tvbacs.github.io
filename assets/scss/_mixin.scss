@@ -1,0 +1,82 @@
+@mixin bgc($background-color){
+    background-color: $background-color;
+}
+@mixin bgP(){
+    background-color: #F3EEEA;
+}
+@mixin bgB(){
+    background-color: #EBE3D5;
+}
+@mixin bgBr(){
+    background-color: #B0A695;
+}
+
+@mixin color($color){
+    color: $color;
+}
+@mixin flex(){
+    display:flex;
+    align-items: center;
+}
+@mixin flexPara($text-align , $justify-content, $align-item,$flex-direction){
+    display:flex;
+    text-align: $text-align;
+    justify-content:$justify-content ;
+    align-items: $align-item;
+    flex-direction: $flex-direction;
+}
+@mixin tagA(){
+    display:inline-block;
+    text-decoration: none;
+}
+@mixin input(){
+    outline:none;
+    border:none;
+    color:#776B5D;
+    background-color: transparent;
+}
+@mixin button(){
+    border:none;
+    outline:none;
+    cursor:pointer;
+    background-color: transparent;
+}
+@mixin img(){
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+    background-size: cover;
+}
+@mixin absoluteCenter($direction : "both"){
+    position:absolute;
+    @if $direction == "left"{
+        left:50%;
+        transform : translateX(-50%);
+    }
+    @if $direction == "top"{
+        top:50%;
+        transform : translateY(-50%);
+    }
+    @if $direction == "both"{
+        top:40%;
+        left:50%;
+        transform : translate(-50%,-50%);
+    }
+}
+@mixin absoluteCenters($direction : "both"){
+    position:absolute;
+    @if $direction == "left"{
+        left:50%;
+        transform : translateX(-50%);
+    }
+    @if $direction == "top"{
+        top:50%;
+        transform : translateY(-50%);
+    }
+    @if $direction == "both"{
+        top:50%;
+        left:50%;
+        transform : translate(-50%,-50%);
+    }
+}

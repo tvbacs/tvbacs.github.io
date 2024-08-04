@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imgsAll/imgHome/image 193.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../ResCss/grid.css">
+    <link rel="stylesheet" href="../ResCss/ResLoginS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/assets/font/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+    <title>Signup | JourneyLife</title>
+</head>
+<body>
+                 
+
+    <div class="container">
+        <div class="background background-image">
+        </div>
+        <div class="content">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-6 m-0 c-12">
+                        <div class="content-left">
+                            <p>Welcome To</p>
+                            <h1>JourneyLife</h1>
+                            <a href="./login.html" class="content-left-button content-left-button--loginn">
+                               <span> Login now</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="content-right">
+                            <form action="/api/signup" method="post" id="form-2">
+                                <a href="/index.html"> <img src="../imgsAll/Logo/logoprimary.png" alt=""></a>
+                                <h1 class="title">Create account</h1>
+                                <span>Let’s get started, are you already a part of journeylife?</span>
+                            <div class="form-group">
+                                <input type="text" name="fullname" placeholder="Fullname..." id="fullname">
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="email" placeholder="Email..."id="email">
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="username" placeholder="Username..." id="username">
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" placeholder="Password..."id="password">
+                                <span class="form-message"></span>
+                            </div>
+                               
+                                <button type="submit" class="">Register</button>
+                                <p>or</p>
+                                <div class="content-right-container-social">
+                                    <a href="" class="content-right-social">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <span>Facebook</span>
+                                    </a>
+                                    <div style="width: 0;height: 20px;border:1px solid var(--primary-color)"></div>
+                                    <a href="" class="content-right-social">
+                                        <i class="fa-brands fa-google"></i>
+                                        <span>Google</span>
+                                    </a>
+                                </div>
+                                <a href="./login.html" class="button-bottom">Become a new member
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Js/validators.js"></script>
+    <script>
+        Validator({
+            form:'#form-2',
+            rules :[
+                isRequired('#fullname'),
+                isEmail('#email'),
+                minlength('#password',6),
+                isRequired('#username')
+            ]
+        })
+    </script>
+    
+    <script>
+         function showNotification(message) {
+            //Cái ni là cái cục overlay nè
+            var overlay = document.createElement('div');
+            overlay.style.position = 'fixed';
+            overlay.style.top = '0';
+            overlay.style.left = '0';
+            overlay.style.width = '100%';
+            overlay.style.height = '100%';
+            overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+            overlay.style.zIndex = '1000';
+
+            //Ni hình như là thông báo bên trong
+            var notification = document.createElement('div');
+            notification.style.position = 'fixed';
+            notification.style.top = '50%';
+            notification.style.left = '50%';
+            notification.style.transform = 'translate(-50%, -50%)';
+            notification.style.backgroundColor = 'white';
+            notification.style.padding = '20px';
+            notification.style.border = '1px solid #ccc';
+            notification.style.borderRadius = '5px';
+            notification.style.zIndex = '1001';
+
+            var messageElement = document.createElement('p');
+            messageElement.textContent = message;
+
+            var okButton = document.createElement('button');
+            okButton.textContent = 'OK';
+            okButton.style.marginTop = '10px';
+            okButton.onclick = function() {
+                overlay.style.display = 'none';
+                notification.style.display = 'none';
+            };
+
+            notification.appendChild(messageElement);
+            notification.appendChild(okButton);
+
+            document.body.appendChild(overlay);
+            document.body.appendChild(notification);
+        }
+
+
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        var signupFailed = urlParams.get('signupFailed');
+        if (signupFailed === 'true') {
+            showNotification('Đăng kí ngu quá, làm lại đi!');
+        }
+    </script>
+</body>
+</html>

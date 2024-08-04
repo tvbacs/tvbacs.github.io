@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/imgsAll/imgHome/image 193.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../ResCss/grid.css">
+    <link rel="stylesheet" href="../ResCss/ResLoginS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/assets/font/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+    <title>Login | JourneyLife</title>
+</head>
+<body>
+                    <!-- <form action="/system/php/login.php" method="post">
+                
+                            <input type="text" name ="username_email" id="username"required>
+            
+                    <button class = "button" type="submit">Login</button> -->
+
+    <div class="container">
+        <div class="background background-image">
+        </div>
+        <div class="content">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-6 m-0 c-12">
+                        <div class="content-left">
+                            <p>Welcome To</p>
+                            <h1>JourneyLife</h1>
+                            <a href="./signup.html" class="content-left-button">
+                               <span> Become a new member</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="content-right">
+                            <form action="/api/login" method="post" id="form-1">
+                               <a href="/index.html"> <img src="../imgsAll/Logo/logoprimary.png" alt=""class=logo></a>
+                                <h1 class="title">Hello!</h1>
+                                <span>Login with your account!</span>
+
+                            <div class="form-group">
+                                <input type="text" name="username" placeholder="Username..." id="username">
+                                <span class="form-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" name="password" placeholder="Password..."id="password">
+                                <span class="form-message"></span>
+                            </div>
+
+                                <a href="" class="a">Forgot password?</a>
+                                <button type="submit">Login</button>
+                                <p>or</p>
+                                <div class="content-right-container-social">
+                                    <a href="" class="content-right-social">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <span>Facebook</span>
+                                    </a>
+                                    <div style="width: 0;height: 20px;border:1px solid var(--primary-color)"></div>
+                                    <a href="" class="content-right-social">
+                                        <i class="fa-brands fa-google"></i>
+                                        <span>Google</span>
+                                    </a>
+                                </div>
+                                <a href="./signup.html" class="button-bottom">Become a new member
+                                    <i class="fa-solid fa-arrow-right"></i></a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <script src="../Js/validators.js"></script>
+        <script>
+            Validator({
+                form :'#form-1',
+                rules:[
+                    isRequired('#username'),
+                    minlength('#password',6),
+                ]
+            })
+        </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.6.0/validator.min.js"></script>
+    <script>
+
+     function showNotification(message) {
+    // Overlay
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+    overlay.style.zIndex = '1000';
+
+    // Notification
+    var notification = document.createElement('div');
+    notification.style.position = 'fixed';
+    notification.style.top = '50%';
+    notification.style.left = '50%';
+    notification.style.transform = 'translate(-50%, -50%)';
+    notification.style.width = '350px';
+    notification.style.backgroundColor = 'rgba(0,0,0,0.2)';
+    notification.style.backdropFilter = 'blur(80px)';
+    notification.style.padding = '20px';
+    notification.style.color = 'white';
+    notification.style.borderRadius = '20px';
+    notification.style.zIndex = '1001';
+    notification.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+
+    // Warning icon
+    var warningIcon = document.createElement('div');
+    warningIcon.textContent = '▲';
+    warningIcon.style.fontSize = '24px';
+    warningIcon.style.color = '#ff3b30';
+    warningIcon.style.marginBottom = '10px';
+
+    // Title
+    var title = document.createElement('h2');
+    title.textContent = 'Login failed!';
+    title.style.fontSize = '20px';
+    title.style.fontWeight = 'bold';
+    title.style.marginBottom = '10px';
+
+    // Message
+    var messageElement = document.createElement('p');
+    messageElement.innerHTML = "Sorry, we couldn't log you into your account. Please check your login details and try again.<br>" +
+                               "• Make sure you have entered the correct email or username and password.<br>" +
+                               "• If you forgot your password, click <a href='#' style='color: #007aff;'>here</a> to reset it.<br>" +
+                               "• If you need further assistance, please contact customer support.";
+    messageElement.style.fontSize = '14px';
+    messageElement.style.lineHeight = '1.4';
+    messageElement.style.marginBottom = '20px';
+
+    // OK Button
+    var okButton = document.createElement('button');
+    okButton.textContent = 'OK';
+    okButton.style.width = '100%';
+    okButton.style.padding = '10px';
+    okButton.style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
+    okButton.style.backdropFilter = 'blur(80px)';
+    okButton.style.color = 'white';
+    okButton.style.border = 'none';
+    okButton.style.borderRadius = '20px';
+    okButton.style.fontSize = '16px';
+    okButton.style.cursor = 'pointer';
+    okButton.onclick = function() {
+        overlay.style.display = 'none';
+        notification.style.display = 'none';
+    };
+
+    notification.appendChild(warningIcon);
+    notification.appendChild(title);
+    notification.appendChild(messageElement);
+    notification.appendChild(okButton);
+
+    document.body.appendChild(overlay);
+    document.body.appendChild(notification);
+    }
+
+    var queryString = window.location.search;
+    var urlParams = new URLSearchParams(queryString);
+    var loginFailed = urlParams.get('loginFailed');
+    if (loginFailed === 'true') {
+        showNotification();
+    }
+    </script>
+
+</body>
+</html>

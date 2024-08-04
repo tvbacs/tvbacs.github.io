@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["_valiable.scss"],"sourcesContent":["$text-color:#776B5D;\r\n$primary-color:#B0A695;\r\n$pink-color: #F3EEEA;\r\n$be-color: #EBE3D5;\r\n$brown-color: #56514b;\r\n$white-color: white;"],"file":"_valiable.css"}

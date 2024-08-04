@@ -1,0 +1,116 @@
+/* PC */
+@media (min-width: 64em) {
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .body{
+        margin-top: -10px;
+    }
+    .body__top-img img {
+        height:auto;
+    }
+    .body__share-content{
+        flex-wrap: wrap;
+    }
+    .body__share-content-right-body img:nth-child(1) {
+        width: 210px;
+    }
+    .body__undertop-content h1{
+        font-size: 26px;
+        margin: 15px 0;
+        width:100%;
+        text-align: center;
+    }.u-hr-two{
+        float:right;
+    }.body__enjoy-right span {
+        margin: 50px 20px 0 0;
+    }
+    .body__share-content-right-body img:nth-child(2) {
+        width: 180px;
+    }
+    .body__share-content-right-body img:nth-child(3) {
+        width: 210px;
+    }
+    .body__share-content-left {
+        height:auto;
+        padding:30px;
+    }
+}
+@media (max-width:46.1875em) {
+    .body{
+        padding:20px 10px;
+    }
+    .body__top h1 {
+    margin: 15px 0 20px 0;
+        font-size: 18px;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .slider__content-title h1{
+        font-size: 3rem;
+    }
+    .slider__content-title{
+        width:100%;
+    }
+    .body__top-img img{
+        height:auto;
+    }
+    .body__undertop-content h1 {
+        width:100%;
+        font-size: 18px;
+        text-align: center;
+    }
+    .u-hr-two{
+        margin-left: 50px;
+        float:right;
+    }
+    .body__top-content{
+        padding:0 10px;
+    }
+  
+    .body__top-content-cir{
+        display:none;
+    }
+    .body__enjoy{
+        padding: 0px 0 10px 0;
+    }
+    .body__enjoy-right-content{
+        width:100%;
+        height:175px;
+        padding:20px;
+        text-align: center;
+    }
+    .body__enjoy-right-content img:nth-child(1){
+        display:none;
+    }
+    .body__enjoy-right-content img:nth-child(2){
+        display:none;
+    }
+    .body__enjoy-right span{
+        float:none;
+    }
+    .body__share-content{
+        flex-wrap: wrap;
+    }
+    .body__share-content-left {
+        height:222px;
+    }
+    .body__share-content-right-body img{
+        display:none;
+    }
+    .body__share-content-right-heading{
+        padding:0 20%;
+    }
+    .body__share-content-right-heading-content h1 {
+        font-size: 20px;
+    }
+    .body-share-bottom-item img {
+        margin:10px 0;
+    }
+    .body__playlist-item{
+        margin:10px ;
+    }
+}

@@ -1,0 +1,517 @@
+/* PC */
+@media (min-width: 64em) {
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .slider-map-two {
+        display: none;
+    }
+    .slider-map-one {
+        display: none;
+    }
+    .slider-content {
+        padding-left: 210px;
+    }
+    .slider-content-title h1{
+        font-size: 60px;
+    }
+    .slider-content-title h2{
+        font-size: 60px;
+    }
+    .slider-content img{
+        width:200px;
+    }
+    .body__list-place-two-content-heading {
+        font-size: 55px;
+    }
+    .body_list-place-end-hr{
+        width: 650px!important;
+    }
+    .body__beacountry-right-shap{
+        display:none;
+    }
+    .body__beacountry-slider h1{
+        width: 100%;
+        right:auto ;
+    }
+    .body__beacountry-left {
+        width:100%;
+    }
+    .body-sapa-list-content-blur-heading h1{
+        font-size: 55px;
+    }
+    .body-sapa-list-content-blur-heading h2{
+        font-size: 55px;
+    }
+    .body-sapa-list-content-button {
+        right:-10%;
+    }
+    .body-hanoi-place{
+        margin-top: -300px;
+    }
+    .body-halong-background-content-heading h2{
+        font-size: 40px;
+    }
+    .body-halong-background-content-heading-title h1{
+        font-size: 40px;
+    }
+    .body-halong-background-content-heading-title h3{
+        font-size: 40px;
+    }
+    .body-halong-background-content-heading-title{
+        margin:-20px 0 0 0;
+    }
+    .body-halong-background-overlay-heading-title h2 {
+        font-size: 40px;
+    }
+    .body-halong-background-overlay-heading-title-hl h1{
+        font-size: 40px;
+    }
+    .body-halong-background-overlay-heading-title-hl h3{
+        font-size: 40px;
+    }
+    .body-halong-background-overlay-subheading{
+        margin:20px 0;
+    }
+    .body-hanoi-place-right-img img{
+        height:auto;
+    }
+    .body__list-place-one-left{
+        width:100%;
+    }
+    .body__list-place-one-right{
+        width:100%;
+    }
+    .body__list-place-one{
+        flex-wrap: wrap;
+    }
+    .body__list-place-one-left-img{
+        width:100%;
+    }
+    .body__list-place-one-left-content{
+        font-size: 25px;
+    }
+    .body__list-place-one-right-content{
+        font-size: 25px;
+    }
+    .body__list-place-three{
+        max-width: 100%;
+    }
+    .body__list-place-two-content{
+        width:auto;
+        top:60%;
+    }
+    .body-ninhbinh-overlay-item-img img{
+        padding:10px;
+    }
+    .body-ninhbinh-overlay-item-img-title{
+        top:10px;
+        right:10px;
+    }
+    .body-ninhbinh-overlay-item-img-show{
+        bottom:20px;
+        left:20px;
+    }
+    .body-ninhbinh-background-content h1 {
+        font-size: 38px;
+    }
+    .body-ninhbinh-overlay-item h1  {
+        font-size: 16px;
+    }
+    .body-ninhbinh-overlay-item-img-overlay p span {
+        font-size: 8px;
+    }
+    .body-ninhbinh-overlay-item-img-overlay p {
+      margin:0;
+    }
+    .body-ninhbinh-overlay-item span {
+        margin:0;
+    }
+    .body-ninhbinh-overlay-item-img-overlay h1 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .body-ninhbinh-overlay-item span{
+        font-size: 13px;
+    }
+    .body-ninhbinh-overlay-item-heart {
+        margin-top: -10px;
+    }
+    .contain-two-gr-right-body img{
+        display:none;
+    }
+    .body-quangbinh-item-right-shape {
+        height:575px;
+        padding:35px;
+    }
+    .body-phuquoc-background-content-item-left h1 {
+        font-size: 28px;
+    }
+ 
+    .body-phuquoc-background-overlay-content-list-two-right{
+        display:none;
+    }
+    .body-phuquoc-background-overlay-content-list-left{
+        display:none;
+    }
+    .body-phuquoc-background-overlay-content-list-right{
+        display:none;
+    }
+    .contain-one-gr-item {
+        margin:10px 10px;
+    }.contain-two-gr-left img {
+        width:103%;
+    }
+    .contain-two-gr-right-header h1{
+        display:none;
+    }
+    .contain-two-gr-right{
+        width:100%;
+    }
+    .contain-two-gr-right-header-btn{
+        margin: 20px 0 20px 30%;
+    }
+    .body__list-place-four > div{
+        display:none;
+    }
+    .body__list-place-four{
+        margin-bottom: 0;
+    }
+    .body__end-content-left{
+        display:none;
+    }.body__end-content-right-heading{
+        margin:18px auto 0 auto;
+    }.body__end-content-right-content h1 {
+        font-size: 20px;
+    }.body__end-content-right-content span {
+        font-size: 18px;
+    }
+    .body__end-content-right-btn {
+        margin-top: 25px;
+    }
+    .body__end-content-right {
+        padding:0 30px;
+    }
+}
+
+@media (max-width:46.1875em) {
+    .body{
+        padding:50px 10px!important;
+    }
+  
+    .slider-content{
+        padding-left: 80px;
+    }   .slider-content-title h1{
+        font-size: 30px;
+    }
+    .slider-content-title h2{
+        font-size: 30px;
+    }
+    .slider-content img{
+        width:110px;
+    }
+    .body__beacountry-slider h1{
+        width:auto;
+        right: auto;
+    }
+    .body__beacountry-slider{
+        margin-top: 0;
+    }
+    .body__list-place-one-left-img{
+        height:395px;
+    }
+    .slider-map-two {
+        display: none;
+    }
+    .slider-map-one {
+        display: none;
+    }
+    .body-sapa-list-content .scene-title h2{
+        font-size: 70px;
+    }
+    .body-sapa-list-content .scene-title h1{
+        font-size: 70px;
+    }
+    .body-sapa-list-content-blur-heading h1{
+        font-size: 30px;
+    }
+    .body-sapa-list-content-blur-description{
+        font-size: 12px;
+    }
+    .body-sapa-list-content-blur-heading {
+        margin: -10px 0;
+    }
+    .body-sapa-list-content-list-vrView{
+        width:80px;
+    }
+    .body-sapa-list-content-list-see{
+        width:80px;
+    }
+    .body-sapa-list-content-blur-heading h2{
+        font-size: 30px;
+    }
+    .body-sapa-list-content-button{
+        right: -21%;
+        transform: translate(-50%);
+        font-size: 11px;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(50px);
+        width: 180px;
+    }
+
+    .body-hanoi-top-right{
+        padding:0 10px;
+    }
+    .body-hanoi-top-right span{
+        font-size: 13px;
+    }
+    .body-ninhbinh-overlay {
+        padding:25px;
+    }
+    .body-hanoi .body-hanoi-name {
+        width:118px;
+    }
+    .body-hanoi-top-right h1{
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+    .body-hanoi-place{
+        margin-top: -250px;
+    }
+    .body-halong-background-content-heading h2{
+        font-size: 30px;
+    }
+    .body-halong-background-content-description{
+        display:none;
+    }
+    .body-halong-background-content-heading h2 {
+        font-size: 35px;
+    }
+    .body-halong-background-content-heading-title h1{
+        font-size: 45px;
+    }
+    .body-halong-background-content-heading-title h3{
+        font-size: 45px;
+    }
+    .body-halong-background-overlay-heading-title h2 {
+        font-size: 22px;
+    }
+    .body-halong-background-overlay-heading-title-hl h1{
+        font-size: 22px;
+    }
+    .body-halong-background-overlay-heading-title-hl h3{
+        font-size: 22px;
+    }
+    .body-halong-background-overlay-subheading{
+        margin:10px 0;
+    }
+    .body-halong-background-overlay-list{
+        display:none;
+    }
+    .body-ninhbinh-background-content h1{
+        font-size: 16px;
+    }
+    .body-ninhbinh-overlay-item h1{
+        font-size: 16px;
+    }
+    .body-ninhbinh-overlay-item-right{
+        display:none;
+    }
+    .body-ninhbinh-overlay-item-heart{
+        margin:0;
+    }
+    .body-ninhbinh-overlay-item span {
+        font-size: 10px;
+    }
+    .body__beacountry-right-shap{
+        display:none;
+    }
+    .body-quangbinh-item-left-content h1{
+        font-size: 40px;
+    }
+    .body-quangbinh-item-right-shape{
+        height:370px;
+    }
+    .body-phuquoc-background-content-item-left{
+        padding-top: 10px;
+    }
+    .body-phuquoc-background-content-item-left h1{
+      
+    }
+    .body-phuquoc-background-content-item-left span {
+        font-size: 12px;
+    }.body-phuquoc-background-content-item-left-btn{
+        margin-top: 15px;
+    }
+    .body-phuquoc-background-content-item-right{
+        display:none;
+    }
+    .body-phuquoc-background-content-item-left h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .contain-two-gr-left {
+        width:100%;
+        margin:60px 0;
+    }
+    .body-phuquoc-background-overlay-content-list-two-right{
+        display:none;
+    }
+    .body-phuquoc-background-overlay-content-list-left{
+        display:none;
+    }
+    .body-phuquoc-background-overlay-content-list-right{
+        display:none;
+    }
+    .body-phuquoc-background-overlay-content{
+        padding:0;
+    }
+    .body-phuquoc-background-overlay-content-list-two-left h1{
+        font-size: 16px;
+    }
+    .body-phuquoc-background-overlay-content-list-two-left span{
+        font-size: 15px;
+    }
+    .body__beacountry-left-shap h4{
+        text-align: center;
+    }
+    .body__beacountry-left {
+        width:100%;
+    }
+    .thep{
+        text-align: center;
+        width:100%;
+    }
+    .body__beacountry-left h1{
+        text-align: center;
+    }
+    .body__list-place-one-left-img-shap{
+        top:85%;
+    }
+    .body__list-place-one-left{
+        width:100%;
+    }
+    .body__list-place-one-right{
+        width:100%;
+    }
+    .body__list-place-one{
+        flex-wrap: wrap;
+    }
+    
+    .body__beacountry-left-shap-list-one-item{
+        font-size: 16px;
+    }
+    .body__list-place-one-left-img{
+        width:100%;
+    }
+    .body__beacountry-left{
+        padding:0;
+    }
+    .body__beacountry-left-content-one span:nth-child(1) {
+        margin-left: -60px;
+    }
+    .body__beacountry-left-shap-list-two-item {
+        padding: 8px 0px 8px 18px;
+        font-size: 16px;
+    }
+    .list-three-item-one {
+        padding: 8px 0px 8px 18px;
+        font-size: 16px;
+    }
+    .list-three-item-two {
+        font-size: 16px;
+        line-height: 48px;
+    }
+    .body__list-place-one-left-content{
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+    .body__list-place-three{
+        max-width: 100%;
+    }
+    .body__list-place-two-content{
+        width:auto;
+        top:35%;
+        display: none;
+    }
+    .body__list-place-two-content span{
+        display:none;
+    }
+    .contain-one-gr-item {
+        height:513px;
+    }
+    .contain-one-gr-item img{
+        height:auto;
+    }
+    .contain-one-gr-item-shap{
+        color:var(--black-color);
+    }
+    .contain-two-gr-right-body img{
+        display:none;
+    }
+    .contain-two-gr-left {
+        width:100%;
+    }
+    .contain-two-gr-right-header h1{
+        display:none;
+    }
+    .contain-two-gr-right{
+        width:100%;
+    }
+    .contain-two-gr-right-header-btn{
+        margin: 20px 0 20px 25%;
+    }
+    .body__list-place-four > div{
+        display:none;
+    }
+        
+    .body__list-place-two-content-heading {
+        font-size: 30px;
+    }
+    .body__list-place-two{
+        margin-top: 0!important;
+    }
+    .body__list-place-four{
+        display: none;
+    }
+    .contain-two-gr-right-body{
+        display: none;
+    }
+    .body_list-place-end-hr{
+        width: 390px!important;
+    }
+    .body__end-content-left{
+        display:none;
+    }
+    .body__end-content-right-heading{
+        margin:10px auto 0 auto;
+    }
+    .body__end-content-right-heading h1 {
+        font-size: 15px;
+    }
+    .body__end-content-right-content h1 {
+        font-size: 15px;
+    }
+    .body__end-content-right{
+        padding: 0 20px;
+    }
+    .body__end-content-right-content span {
+        font-size: 12px;
+    }
+    .body__end-content-right-btn{
+        display:none;
+    }
+    .body__list-place-end-list{
+       padding-left: 10px;
+    }
+    .body__list-place-end{
+        
+    }
+
+}

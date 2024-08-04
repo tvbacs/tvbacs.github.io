@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.7",
+    "sass": "^1.77.4"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "start": "concurrently \"node server.js\" \"node api/server_css_font_html/server_staticf.js\" \"node api/server_image/server_image_home.js\""
+  },
+  "name": "journeylife",
+  "version": "1.0.0",
+  "main": "profile.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

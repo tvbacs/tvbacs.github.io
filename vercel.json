@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/server_css_font_html/server_staticf.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/server_image/server_image_home.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/server_css_font_html/(.*)",
+      "dest": "/api/server_css_font_html/server_staticf.js"
+    },
+    {
+      "src": "/api/server_image/(.*)",
+      "dest": "/api/server_image/server_image_home.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ]
+}
+
